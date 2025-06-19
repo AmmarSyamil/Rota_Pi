@@ -42,4 +42,4 @@ Also I had a few time left adn i used that to find the datasheet, dimesion, and 
 In the next part i want to start 3D designing. hope itll be fun!
 
 
-**Total time spent: 3H**
+**Total time spent: 4H**
