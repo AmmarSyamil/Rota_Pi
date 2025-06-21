@@ -43,3 +43,20 @@ In the next part i want to start 3D designing. hope itll be fun!
 
 
 **Total time spent: 4H**
+
+# June 21th: 3D menace
+
+For this project, I decided to use FreeCAD instead of other free CAD software like Fusion 360, because I actually dont know good free cad until I read the recomended thing in highway website (whhich recomedn to use fusion360). But oh well, it cant be that bad right??
+
+Well.... As for the last hour i just tweeks all of my brain celll about how to like change the position of a pad in 3d wihtout cahnging the sketch, theres a built in setting called "placement", but it didnt update the real pad position, i try following countless YT videos and endless reddid post, and found no hope until i found this post:
+https://www.reddit.com/r/FreeCAD/comments/1ht0gcg/in_freecad_10_i_cant_adjust_position_of_a_sketch/
+
+And theres a person said this "Edit attachment, not placement. ". So wait, i check it but like where do the attachement option is????. until countless time afterward i found it but in the properties setting of the pad. And i click the edit button from the attachment part and it show similar tab like my initial placement setting, but the different is that its works. yayyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
+
+And this is bc in Freecad, when we tweeks the placement, its like moving the whole goddam thing like what its sitting on and waht its link too also move, and this create error and bc of that,  freecad disalow this setting. The right way is to change via attachment, or just change this and other think will adapt to it, and this is fine. But why dotn Freecad tells me this?
+
+So other than this problem the infamous "wire is not closed" error is haunted me for hours, but its not as bad as that one. So heres is where i left on today:
+![alt text](image/5.png)
+![alt text](image/6.png)
+
+**Total time spent: 4H**
