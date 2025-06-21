@@ -53,10 +53,10 @@ https://www.reddit.com/r/FreeCAD/comments/1ht0gcg/in_freecad_10_i_cant_adjust_po
 
 And theres a person said this "Edit attachment, not placement. ". So wait, i check it but like where do the attachement option is????. until countless time afterward i found it but in the properties setting of the pad. And i click the edit button from the attachment part and it show similar tab like my initial placement setting, but the different is that its works. yayyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
 
-And this is bc in Freecad, when we tweeks the placement, its like moving the whole goddam thing like what its sitting on and waht its link too also move, and this create error and bc of that,  freecad disalow this setting. The right way is to change via attachment, or just change this and other think will adapt to it, and this is fine. But why dotn Freecad tells me this?
+And this is bc in Freecad, when we tweeks the placement, its like moving the whole goddam thing like what its sitting on and waht its link too also move, and this create error and bc of that,  freecad disalow this setting. The right way is to change via attachment, or just change this and other think will adapt to it, and this is fine. But why dotn Freecad tells me this? (maybe i should have been using Fusion360 instead this whole time)
 
 So other than this problem the infamous "wire is not closed" error is haunted me for hours, but its not as bad as that one. So heres is where i left on today:
 ![alt text](image/5.png)
 ![alt text](image/6.png)
 
-**Total time spent: 4H**
+**Total time spent: 6H**
