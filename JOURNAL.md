@@ -46,7 +46,7 @@ In the next part i want to start 3D designing. hope itll be fun!
 
 # June 21th: 3D menace
 
-For this project, I decided to use FreeCAD instead of other free CAD software like Fusion 360, because I actually dont know good free cad until I read the recomended thing in highway website (whhich recomedn to use fusion360). But oh well, it cant be that bad right??
+For this project, I decided to use FreeCAD instead of other free CAD software like Fusion 360, because I actually dont know good free cad software until I read the recomended thing in highway website (whhich recomedn to use fusion360) and by that time, i already learn freecad. But oh well, it cant be that bad right??
 
 Well.... As for the last hour i just tweeks all of my brain celll about how to like change the position of a pad in 3d wihtout cahnging the sketch, theres a built in setting called "placement", but it didnt update the real pad position, i try following countless YT videos and endless reddid post, and found no hope until i found this post:
 https://www.reddit.com/r/FreeCAD/comments/1ht0gcg/in_freecad_10_i_cant_adjust_position_of_a_sketch/
@@ -59,4 +59,15 @@ So other than this problem the infamous "wire is not closed" error is haunted me
 ![alt text](image/5.png)
 ![alt text](image/6.png)
 
+**Total time spent: 6H**
+
+# June 26th: re-doing
+
+So i just did some things like planning the button placement, making the non finish rear part, and basically the structure. Until a time i notice that my handle are too small, its not about my calculation but its about the handle structure that make lots of part of the handle into the cap of the wheel. Thankfully i notice it before building the screww and detailing stuff, but it still suck to redo almost all part of it, its not that much actually. BUT...... i face error, bc i change a part of a sketch, the other part that are linked to it became error, and welp, almost 30 error is showned when i doing sometihing (freecad will always tell the error everytime the user do thign, eventho its not related). 
+
+I fix it, its preatty easy cux freecad tools me what part of it. BUT............ theres a part where in the sketch its included but the pad of it its not,u can see the image below teh one in the green line. So what happen is that when i update the part of the handle, the updated part is working but the old one (which is the top part ) not showing eventho i dont doo anything to it. I just furious and i almost crashout (chatgpt also). chatgpt told me that it maybe bc theres some line that arent connected, but if there is there must be the "wire not closed" error, which there aren't, he said to chechk the sketch using sketch validate tools, but i try em, and it show all fine. and at last resoult i try remaking the top part, and it works, guess when finding a bug is better to make it from scratch rather than fixing it, not bc im lazy it just bc the software is bugging (nah this man is escussing)
+![alt text](image.png)
+
+oh almost forget, the handle update i mention earlier is the bottom part here:
+![alt text](image-1.png)
 **Total time spent: 6H**
