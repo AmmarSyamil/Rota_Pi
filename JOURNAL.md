@@ -72,7 +72,7 @@ oh almost forget, the handle update i mention earlier is the bottom part here:
 ![alt text](image/8.png)
 **Total time spent: 6H**
 
-# July 11th: finishing
+# June 27th - July 11th: finishing
 
 So actually, for the last 2 weeks or so, I grind for this project every night (cuz morning i sleep) and i always forget and lazy to document it so i just yeet em up and dumb into one for here. SO where could i start? so i finish the design, screwing,  mounting, wrote the BOM, and much more. Here a picture of it:
 ![alt text](image/9.png)
@@ -81,17 +81,17 @@ I also make and finish lots of chechlish taht i made on Notion so i could keep t
 
 In short what is boolean cut is, its a tools to delete a part of a body according to other body. But here's the confusing part, theres 2 way todo it in FreeCAD, either via part design workbench or part workbench (it just some edit mode in freecad in short). The differents is that in part workbench, when i make the boolean it create new body taht combine both of the old body into one cutted body. But for the part design workbench, instead creating new body it just edit the first body and cut it according the second body, but the part desing workbench method is more prone to error cuz editing tend to cause some dependesies problem  (like im here). 
 
-So why did i wanna achive in the bollean cut in the first place? so i wanna make a hole for the screw acros some bodies, theres the manual works which is meh and easily messed up when editing so i use boolean by creating a tube like body and cut acros those body. The first problem is that boolean dont actually works, theres no error but theres no result either (maybe i stick to fusion instead this whoole time) but i fixed the issues, with the help of media and 3 y/o forum, the intended methos is to use the sub-binder tools so taht its more stable and less prone to error. So sub-binder it just a way to replicate a body into another body taht u can use for various things like boolead cut, bc its a copy it had less dependency with other part so it had less chance to error. So i try it, adn it works for the first part, but when i wanna cut to the other body it just cant work. After countless hours pass, i found some possible fixes, the first is to turn on the "allow compound" option in the body i wanna cut, thiss allow that body to have multiple seperate part. Other tahn that, in the sub-binder part theres option to turn of all the dependency and the things that rely on it, and yay its works for all of the body and part of the screw i wanna put.
+So why did i wanna achive in the bollean cut in the first place? so i wanna make a hole for the screw acros some bodies, theres the manual works which is meh and easily messed up when editing so i use boolean by creating a tube like body and cut acros those body. The first problem is that boolean dont actually works, theres no error but theres no result either (maybe i stick to fusion instead this whoole time) but i fixed the issues, with the help of media and 3 y/o forum, the intended methos is to use the sub-binder tools so taht its more stable and less prone to error. So sub-binder it just a way to replicate a body into another body taht u can use for various things like boolead cut, bc its a copy it had less dependency with other part so it had less chance to error. So i try it, adn it works for the first part, but when i wanna cut to the other body it just cant work. After countless hours pass, i found some possible fixes, the first is to turn on the "allow compound" option in the body i wanna cut, thiss allow that body to have multiple seperate part. Other tahn that, in the sub-binder part theres option to turn of all the dependency and the things that rely on it, and yay its works for all of the body and part of the screw i wanna put. If my brain its right, this happen around 1-3th july and as u may guest it cost alot of hours, maybe 15 or so.
 
 The other error i encountered is the DAG error, which in short mean that theres something that make a circular dependency. For example sketch A is depend of B origin (like B's coordinate relative), C is the pad that ocupise the sketch A, but origin B places depend of the one face in the pad of pad C, so Freecad just freek out and ded, theres some way to found the DAG (bcus they didnt mention where the DAG is on the debug (another reason to chagne to fusion), but i remember a way to make the debug said it but i forget and cant find the way in the forum nor freecad webs), first is using the "dependency graph" feature built in the Freecad, its just a Graphviz integrated to built like flowcart of dependency of your project, the other way is to use a hidden unintended (according to the freecad wikis idk why) tools called the "DAG view", which u just turn one by tweeking some setting, which does the works like the first option but it more clean but less intuitive about the graph.
 
-But................ my project litteraly had so much thingy in there its almost impossible to found the circular dependency error part. Both the first and second way are useless, so what i did is, just re doing the screw thingy  (which cost heavely hours) and it show no error this time, yipe. casual coding fix
+But................ my project litteraly had so much thingy in there its almost impossible to found the circular dependency error part. Both the first and second way are useless, so what i did is, just re doing the screw thingy  (which cost heavely hours) and it show no error this time, yipe. casual coding fix. For this error, this happen more or less on the 5th or the 6th of july, and it cost me around 8 hours i think?
 
 Now for the fillet error, so in short fillet is really sensitive here, one wwrong move and theres floating rectengle out of nowhere. But aslong as u follow the intended way it works (mostly), theres no actually intended way, but like some way to prevent anomalies for hapening, like making sure the angle between line is tangent or not using mulitiple arch at one (used b spline insteaad), this is the hard part bcuz at some part theres no fix to this, so i just tweeks and hop no one saw some anomalise, like this part: (its part of the handle)
 ![alt text](image/10.png)
-this it the best i could do, it cut a lot of imagination that i wanna make but oh well.
+this it the best i could do, it cut a lot of imagination that i wanna make but oh well. This one happen lately (june 11th), but its a quik fixs (i mean just ignore it).
 
-Now for the hard part, the paddle part. This part need really precise measurment, bc one wrong angle/distance and the whole thing may not reach my finger. Oh, i also planing to use index finger to use the paddle, its more like how supercar change geers (like some mclaren). Also i need to precisely measure the distance of the magnet to the hall sensor magnet between the max and min value of the paddle, and let say i had difficult time finding the right place for the magnet and sensor, i initialy plan to put both of em inside the case via extenting the paddle into the cap, but i dont think that necessary, so i just put it outside, its looks awful but hey, who look at back anyways?
+Now for the hard part, the paddle part. This part need really precise measurment, bc one wrong angle/distance and the whole thing may not reach my finger. Oh, i also planing to use index finger to use the paddle, its more like how supercar change geers (like some mclaren). Also i need to precisely measure the distance of the magnet to the hall sensor magnet between the max and min value of the paddle, and let say i had difficult time finding the right place for the magnet and sensor, i initialy plan to put both of em inside the case via extenting the paddle into the cap, but i dont think that necessary, so i just put it outside, its looks awful but hey, who look at back anyways? I already did the outline of the paddle part before this session, but i made the detail at this session. For this one, its around 8th or i think its 9th july (cuz 7th july i was busy), and it cost around 15 hours or so.
 ![alt text](image/11.png)
 
 The last issues i encountered is how to make the wheel stay still of the table, i initialy wanna use some kind of metal clamp, but i found a really good model of 3d printed clamp. I use the 3d printed one bc i could tweek a bit so it looks more contrast to the wheel. So the issues was that the 3d file i found of the clamp is .stl instead of .step, so i need to change from a mest (.stl) into a .step that can be edited easily, but let say that its not making a good .step replica. BC .stl is just a billion triangle, converting to .step could mean still inherid does billion triangle, it make it so lagy and hard to edit as a whole (bc u need to edit each individual traingle faces). Thankfully theres a feature in FreeCAD to simplify the body, so i use this andd..... nothing happen, it still a billion trianggle, so i try using the "convert into body" feature, which just turn it into body not change anything, but idk why when i did this i could simplify the body and make it way simple than before.
@@ -100,12 +100,25 @@ From this:
 
 into this:
 ![alt text](image/13.png)
+This one is at the 10th and continue at 11th july, it uses around 8 hours or so.
 
-
-I think this is all the error and issues i encountered, other than that maybe the small error like wire not closed or just freecad freak out about the UI. Speaking of the UI, i tweek the setting abit now my FreeCAD looks georgoues, its not like 20 y/o app built for linux anymore. Its looks like this:
+I think this is all the error and issues i encountered, other than that maybe the small error like wire not closed or just freecad freak out about the UI. Speaking of the UI, i tweek the setting abit now my FreeCAD looks georgoues, its not like 20 y/o app built for war anymore. Its looks like this:
 ![alt text](image/14.png)
 
-I think its finish, i plan to use the 350$ grant so i need to present (more or less) to pitstop, hopefully i could get lots of support.
+I think its finish, i plan to use the 350$ grant so i need to present (more or less) to pitstop, hopefully i could get lots of support. Also i did lots of other things like finding the deal in marketplace, serching for best 3d printing and PCB service localy (cuz Indonesia where i live from cant get things from china for some reason), and i already got and eye into some places and already asking about the service detail.
 
 **Total time spent: 40h**
+
+# July 12th: emmm still finishing
+I finaly round down my option for my 3d printing service i wanna use, its called Filamen (u can seach filamen.com/id) (the reason i no). I face a problem, their machine only support 250mmx250mmx250mm, but my wheel width is around 300mm ish, so i plan to cut in half and use screw to joint em. So i made extra pad for the screw to joint, somehow somewhy it didnt works, i just do literaly the thing i had done a billion time and this one error for no aperent reason.
+
+So the error said that (in short) the pads i made is not intercepting the whole body, oh boy where do i start? First i use external link which in short is just a link to the body so its no way that it missed, second i already use "allow compund" option in that body, so freecad allow multiple part in that body. After fw hours searching forum i gave up, i just ask teh forum rn and waiting for the reply.
+
+THankfully, from filamen service, they provided free 3d design consultation, so hopefully they could fix this  with they fancy premium app. 
+
+Also i did some lil design change, like adding chamfer/fillet in the rear and do some tidy stuff.
+![alt text](image/15.png)
+
+And i hope i could fix taht error today (cuz its 3 am rn) and could finaly pitch to the pitstop.
+**Total time spent: 6H**
 
