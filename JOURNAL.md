@@ -66,8 +66,46 @@ So other than this problem the infamous "wire is not closed" error is haunted me
 So i just did some things like planning the button placement, making the non finish rear part, and basically the structure. Until a time i notice that my handle are too small, its not about my calculation but its about the handle structure that make lots of part of the handle into the cap of the wheel. Thankfully i notice it before building the screww and detailing stuff, but it still suck to redo almost all part of it, its not that much actually. BUT...... i face error, bc i change a part of a sketch, the other part that are linked to it became error, and welp, almost 30 error is showned when i doing sometihing (freecad will always tell the error everytime the user do thign, eventho its not related). 
 
 I fix it, its preatty easy cux freecad tools me what part of it. BUT............ theres a part where in the sketch its included but the pad of it its not,u can see the image below teh one in the green line. So what happen is that when i update the part of the handle, the updated part is working but the old one (which is the top part ) not showing eventho i dont doo anything to it. I just furious and i almost crashout (chatgpt also). chatgpt told me that it maybe bc theres some line that arent connected, but if there is there must be the "wire not closed" error, which there aren't, he said to chechk the sketch using sketch validate tools, but i try em, and it show all fine. and at last resoult i try remaking the top part, and it works, guess when finding a bug is better to make it from scratch rather than fixing it, not bc im lazy it just bc the software is bugging (nah this man is escussing)
-![alt text](image.png)
+![alt text](image/7.png)
 
 oh almost forget, the handle update i mention earlier is the bottom part here:
-![alt text](image-1.png)
+![alt text](image/8.png)
 **Total time spent: 6H**
+
+# July 11th: finishing
+
+So actually, for the last 2 weeks or so, I grind for this project every night (cuz morning i sleep) and i always forget and lazy to document it so i just yeet em up and dumb into one for here. SO where could i start? so i finish the design, screwing,  mounting, wrote the BOM, and much more. Here a picture of it:
+![alt text](image/9.png)
+
+I also make and finish lots of chechlish taht i made on Notion so i could keep track what todo. I also hear that Tokopedia (an Indonesia online marketplace) support HCB directly, but im not sure if its true or not. Anyways now for the problem that i encountered in this session, which is the way that Freecad boolean ccut works.
+
+In short what is boolean cut is, its a tools to delete a part of a body according to other body. But here's the confusing part, theres 2 way todo it in FreeCAD, either via part design workbench or part workbench (it just some edit mode in freecad in short). The differents is that in part workbench, when i make the boolean it create new body taht combine both of the old body into one cutted body. But for the part design workbench, instead creating new body it just edit the first body and cut it according the second body, but the part desing workbench method is more prone to error cuz editing tend to cause some dependesies problem  (like im here). 
+
+So why did i wanna achive in the bollean cut in the first place? so i wanna make a hole for the screw acros some bodies, theres the manual works which is meh and easily messed up when editing so i use boolean by creating a tube like body and cut acros those body. The first problem is that boolean dont actually works, theres no error but theres no result either (maybe i stick to fusion instead this whoole time) but i fixed the issues, with the help of media and 3 y/o forum, the intended methos is to use the sub-binder tools so taht its more stable and less prone to error. So sub-binder it just a way to replicate a body into another body taht u can use for various things like boolead cut, bc its a copy it had less dependency with other part so it had less chance to error. So i try it, adn it works for the first part, but when i wanna cut to the other body it just cant work. After countless hours pass, i found some possible fixes, the first is to turn on the "allow compound" option in the body i wanna cut, thiss allow that body to have multiple seperate part. Other tahn that, in the sub-binder part theres option to turn of all the dependency and the things that rely on it, and yay its works for all of the body and part of the screw i wanna put.
+
+The other error i encountered is the DAG error, which in short mean that theres something that make a circular dependency. For example sketch A is depend of B origin (like B's coordinate relative), C is the pad that ocupise the sketch A, but origin B places depend of the one face in the pad of pad C, so Freecad just freek out and ded, theres some way to found the DAG (bcus they didnt mention where the DAG is on the debug (another reason to chagne to fusion), but i remember a way to make the debug said it but i forget and cant find the way in the forum nor freecad webs), first is using the "dependency graph" feature built in the Freecad, its just a Graphviz integrated to built like flowcart of dependency of your project, the other way is to use a hidden unintended (according to the freecad wikis idk why) tools called the "DAG view", which u just turn one by tweeking some setting, which does the works like the first option but it more clean but less intuitive about the graph.
+
+But................ my project litteraly had so much thingy in there its almost impossible to found the circular dependency error part. Both the first and second way are useless, so what i did is, just re doing the screw thingy  (which cost heavely hours) and it show no error this time, yipe. casual coding fix
+
+Now for the fillet error, so in short fillet is really sensitive here, one wwrong move and theres floating rectengle out of nowhere. But aslong as u follow the intended way it works (mostly), theres no actually intended way, but like some way to prevent anomalies for hapening, like making sure the angle between line is tangent or not using mulitiple arch at one (used b spline insteaad), this is the hard part bcuz at some part theres no fix to this, so i just tweeks and hop no one saw some anomalise, like this part: (its part of the handle)
+![alt text](image/10.png)
+this it the best i could do, it cut a lot of imagination that i wanna make but oh well.
+
+Now for the hard part, the paddle part. This part need really precise measurment, bc one wrong angle/distance and the whole thing may not reach my finger. Oh, i also planing to use index finger to use the paddle, its more like how supercar change geers (like some mclaren). Also i need to precisely measure the distance of the magnet to the hall sensor magnet between the max and min value of the paddle, and let say i had difficult time finding the right place for the magnet and sensor, i initialy plan to put both of em inside the case via extenting the paddle into the cap, but i dont think that necessary, so i just put it outside, its looks awful but hey, who look at back anyways?
+![alt text](image/11.png)
+
+The last issues i encountered is how to make the wheel stay still of the table, i initialy wanna use some kind of metal clamp, but i found a really good model of 3d printed clamp. I use the 3d printed one bc i could tweek a bit so it looks more contrast to the wheel. So the issues was that the 3d file i found of the clamp is .stl instead of .step, so i need to change from a mest (.stl) into a .step that can be edited easily, but let say that its not making a good .step replica. BC .stl is just a billion triangle, converting to .step could mean still inherid does billion triangle, it make it so lagy and hard to edit as a whole (bc u need to edit each individual traingle faces). Thankfully theres a feature in FreeCAD to simplify the body, so i use this andd..... nothing happen, it still a billion trianggle, so i try using the "convert into body" feature, which just turn it into body not change anything, but idk why when i did this i could simplify the body and make it way simple than before.
+From this:
+![alt text](image/12.png)
+
+into this:
+![alt text](image/13.png)
+
+
+I think this is all the error and issues i encountered, other than that maybe the small error like wire not closed or just freecad freak out about the UI. Speaking of the UI, i tweek the setting abit now my FreeCAD looks georgoues, its not like 20 y/o app built for linux anymore. Its looks like this:
+![alt text](image/14.png)
+
+I think its finish, i plan to use the 350$ grant so i need to present (more or less) to pitstop, hopefully i could get lots of support.
+
+**Total time spent: 40h**
+
