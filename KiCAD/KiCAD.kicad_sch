@@ -2160,16 +2160,16 @@
 		(uuid "71bc6b1f-cf52-4efb-aa5a-502c5ad32fd4")
 	)
 	(no_connect
-		(at 152.4 100.33)
-		(uuid "731097f2-8738-47f5-885a-f1ab42780d75")
-	)
-	(no_connect
 		(at 152.4 90.17)
 		(uuid "b94b9747-b7fd-4453-94d2-237dbf138773")
 	)
 	(no_connect
 		(at 124.46 44.45)
 		(uuid "c09ff158-13eb-4557-b7d6-e90c8c87f79a")
+	)
+	(no_connect
+		(at 152.4 77.47)
+		(uuid "c2ff6422-1384-488b-bbab-a43c5c7a2910")
 	)
 	(no_connect
 		(at 129.54 44.45)
@@ -2227,16 +2227,6 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 77.47) (xy 152.4 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "126f46ca-8c52-486d-add2-f55a6e7ac96f")
-	)
-	(wire
-		(pts
 			(xy 74.93 165.1) (xy 86.36 165.1)
 		)
 		(stroke
@@ -2254,16 +2244,6 @@
 			(type default)
 		)
 		(uuid "173e84a3-025d-44aa-9e39-570847223990")
-	)
-	(wire
-		(pts
-			(xy 194.31 105.41) (xy 165.1 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1774fc2c-38b7-45a6-8fe3-a3d7e8e06594")
 	)
 	(wire
 		(pts
@@ -2454,16 +2434,6 @@
 			(type default)
 		)
 		(uuid "402f2137-6480-40a8-b450-b9db01eb96ff")
-	)
-	(wire
-		(pts
-			(xy 194.31 137.16) (xy 194.31 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "412c1126-6f23-49d8-9a9f-c5e8684abf24")
 	)
 	(wire
 		(pts
@@ -2817,6 +2787,16 @@
 	)
 	(wire
 		(pts
+			(xy 194.31 100.33) (xy 194.31 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8f928a6b-0b9b-4a6c-8251-f9ce98971a6d")
+	)
+	(wire
+		(pts
 			(xy 154.94 125.73) (xy 154.94 74.93)
 		)
 		(stroke
@@ -2824,16 +2804,6 @@
 			(type default)
 		)
 		(uuid "932984ab-aa46-437e-bc56-15739f59c837")
-	)
-	(wire
-		(pts
-			(xy 165.1 105.41) (xy 165.1 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9742f9fb-a4ce-4a99-ba21-8e3e1e583bd3")
 	)
 	(wire
 		(pts
@@ -2954,6 +2924,16 @@
 			(type default)
 		)
 		(uuid "c10b91a1-2ca6-42b5-8e1f-a107f4087e38")
+	)
+	(wire
+		(pts
+			(xy 152.4 100.33) (xy 194.31 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c1e27c2a-9f09-4bd7-a8c8-499b44c0e032")
 	)
 	(wire
 		(pts
