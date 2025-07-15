@@ -1,12 +1,27 @@
-ROTA Pi, a steering wheel dedicated race sim made from Rasp Pico. It utalize all the peripheral including the throttle and braking on the wheel itself, so it could be used fully on the steering wheel, wihtout need extra pads for brake and accelerate.
+ROTA_Pi a custom built sim race steering wheel powered by a **Raspberry Pi Pico**, designed for usability and ease of setup. It features all peripheral that is needed in sim racing (DRS, ADS, change gears, POV shift, and much more) and the additional paddle behind the wheel for both the throttle and braking without the need of external pads for it.
 
-It used rotary potensiometer for angle detection, with 2 linear magnetic hall sensor for accelerate and braking, alongside with multiple rotary encoder and button for other peripheral like gears ABS, DRS and other.
+This project combine embedded hardware, custom 3D design, and custom styling all built from the ground up using custom PCBs, sensors system, and a 3D-printed enclosure modeled in **FreeCAD**. I also plan to add BMW M series badge at the middle of the wheel for accesories (not the real one of course).
 
 
-
+Specs:
+1. Main process device: **Raspberry Pi Pico** (RP2040)
+2. Peripheral: 
+    - Button: R13-507
+    - Rotary Potentiometer: 10K ohm version
+    - Rotary Encoder: EC-11
+    - Hall sensor: SS49E
+3. Magnet: Neudymium 8x3mm
+4. Display: 0.91" 128x32 OLED display
+5. Power and data cable: Vention usb-C to usb-B
 
 Background:
 
-Lately, I really started into cars stuff and thats make me wanna play Car game, like F1 25, Asseto Corsa, or even Forza Horizon. But my money is already used for buying laptop (duhh) so i coulndt aford to buy dedicated race sim. Other than that, i also wanna make more portabel version, the one that doesnt require pads for accesibility (because thats the point of laptop right?). So because of that, I had an idea for this project. 
+Lately, I started into cars stuff and thats make me wanna play Car game, like F1 25, Asseto Corsa, or even Forza Horizon. But my money is already used for buying laptop (duhh) so i coulndt aford to buy dedicated race sim. Other than that, I also want a simple race sim without lots of setup and place taken. Because of that, i made this project that target usability..
 
 
+
+Credits & Attribution:
+
+1. Clamp model made by Studio Space Dust from Printables website
+- Webs: https://www.printables.com/model/730655-c-clamp-with-swappable-clamp-ends/files
+- Licensce: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) http://creativecommons.org/licenses/by-nc-sa/4.0/
