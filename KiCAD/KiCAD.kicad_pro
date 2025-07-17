@@ -123,7 +123,7 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.254,
+        "min_clearance": 0.3,
         "min_connection": 0.254,
         "min_copper_edge_clearance": 0.254,
         "min_groove_width": 0.0,
@@ -136,7 +136,7 @@
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.6,
-        "min_track_width": 0.254,
+        "min_track_width": 0.3,
         "min_via_annular_width": 0.1,
         "min_via_diameter": 1.27,
         "solder_mask_to_copper_clearance": 0.0,
@@ -470,7 +470,7 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.254,
+        "clearance": 0.3,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -481,7 +481,7 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.254,
+        "track_width": 0.3,
         "via_diameter": 1.27,
         "via_drill": 0.6096,
         "wire_width": 6
@@ -499,7 +499,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "C:/Users/ASUS/Documents/code/Rota_Pi/KiCAD/PCB file/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "pcb file v3.step",
