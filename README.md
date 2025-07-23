@@ -18,13 +18,13 @@ Other than that, I also want a simple race sim without lots of setup and place t
 I used pinhole in the PCB instead of direct of it, because it is easier to repair and fine tune.  
 Also I print the PCB in my local shop because there’s MoQ JLCPCB and my PCB isn’t complex.
 
-![PCB Image](image.png)  
-![PCB Rear](image-3.png)
+![PCB Image](image/16.png)  
+![PCB Rear](image/19png)
 
 For the 3D model, I printed in **Filamen.com** of Indonesia, because there’s no #print-legion in Indonesia.
 
-![3D Print Front](image-2.png)  
-![3D Print Rear](image-1.png)
+![3D Print Front](image/18.png)  
+![3D Print Rear](image/17.png)
 
 For the other parts I ordered from **Tokopedia** (an online marketplace in Indonesia), because Temu and Aliexpress can’t send to Indonesia.  
 You can search the BOM for the total bill.
